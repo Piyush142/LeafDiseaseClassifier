@@ -12,7 +12,7 @@ def preprocess_input(x, dim_ordering='default'):
     if dim_ordering == 'default':
 ## dim_ordering = K.image_dim_ordering()
 ##        dim_ordering = K.image_data_format()
-          dim_ordering = K.set_image_data_format("channels_last")
+          dim_ordering = K.image_data_format()
     assert dim_ordering in {'channels_last', 'channels_first'}
 
     if dim_ordering == 'channels_first':
