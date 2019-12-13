@@ -13,8 +13,7 @@ def preprocess_input(x, dim_ordering='default'):
 ## dim_ordering = K.image_dim_ordering()
 ##        dim_ordering = K.image_data_format()
            dim_ordering = K.image_data_format()
-           dim_ordering
-    assert dim_ordering in {'channels_last', 'channels_first'}
+#    assert dim_ordering in {'channels_last', 'channels_first'}
 
     if dim_ordering == 'channels_first':
         x[:, 0, :, :] -= 103.939
